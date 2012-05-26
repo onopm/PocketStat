@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>pocketstat</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link href="/static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="/static/jquery-1.7.2.min.js"></script>
+<script src="/static/flot/jquery.flot.min.js"></script>
+<script src="/static/flot/jquery.flot.pie.min.js"></script>
+<script src="/static/flot/jquery.flot.stack.min.js"></script>
+<!--<script src="/flotr2.min.js"></script>-->
+<script src="/static/socket.io.js"></script>
+<script src="/static/main.js"></script>
+<link href="/static/main.css" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar navbar-fixed-top">
+        <div class="navbar-inner">
+            <div class="container">
+                <a class="brand" href="#">PocketStat</a>
+                <div class="nav-collapse">
+                    <ul class="nav">
+                        <li class="active"><a href="#">Home</a></li>
+                    </ul>
+                    <ul class="nav pull-right">
+                        <li class="liz"><a id="nav_cpu" href="#">CPU</a></li>
+                        <li class="divider-vertical"></li>
+                        <li><a id="nav_clock" href="#">Clock</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div><!-- /.navbar-inner -->
+    </div><!-- /.navbar -->
+    <div class="container">
+        <div id="main"> 
+
+            <div id="server_time"></div> 
+
+            <h3>CPU使用率</h3>
+            <div class="row">
+                <div class="span10"> 
+                    <div id="cpu_flot" style="width: 780px; height: 200px;"></div>
+                </div>
+                <div class="span2"> 
+                    <div id="cpu_pie" style="width: 120px; height:120px;"></div>
+                </div>
+            </div>
+            <hr />
+
+        </div>
+    </div>
+</body>
+</html>

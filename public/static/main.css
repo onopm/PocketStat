@@ -1,0 +1,32 @@
+body {
+    margin-top: 50px;
+}
+
+#nav_cpu {
+    width:  180px;
+    height: 40px;
+}
+.liz {
+    width:  200px;
+    height: 40px;
+}
+#nav_clock {
+    width:  40px;
+    height: 40px;
+}
+
+footer {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: 2px; 
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* smart phones */
+@media screen and (max-device-width: 480px) {
+}
